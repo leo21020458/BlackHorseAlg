@@ -43,4 +43,11 @@ public class Intro1 {
         sum = (n + 1) * n / 2;
         System.out.println(sum);
     }
+
+    public static long fun1(long n){
+        if(n==1){
+            return 1;
+        }
+        return n*fun1(n-1);
+    }
 }
